@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AppDevSettings_Example' do
+  pod 'AppDevSettings', :path => '../'
+
+  target 'AppDevSettings_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
