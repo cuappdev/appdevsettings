@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AppDevSettings
 //
-//  Created by Drew Dunne on 04/13/2019.
+//  Created by Drew Dunne on 04/11/2019.
 //  Copyright (c) 2019 Drew Dunne. All rights reserved.
 //
 
@@ -14,8 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        window = UIWindow()
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
