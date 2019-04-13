@@ -1,0 +1,23 @@
+PODS:
+  - AppDevSettings (0.1.0):
+    - SnapKit (~> 4.2.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - AppDevSettings (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  AppDevSettings:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppDevSettings: d5758cf9745d19359a7a070a2c64817d9b6a4b12
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: ca0c824f27cc87f139a1ec13f05015b931eaffb0
+
+COCOAPODS: 1.6.0
