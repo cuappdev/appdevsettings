@@ -35,13 +35,21 @@ enum MySettings {
                     key: "my_bool_key",
                     completion: { val in
                         print("Changed to: \(val)")
-                }
+                    }
                 ),
                 .button(
                     "Logout",
                     style: .destructive,
-                    action: {
+                    action: { vc in
                         print("Button pressed")
+                    }
+                ),
+                .button(
+                    "Detail",
+                    style: .detail,
+                    action: { (vc: SettingsViewController?) in
+                        print("Detail pressed")
+                        vc?.navigationController?.pushViewController(UIViewController(), animated: true)
                 }
                 )
             ]

@@ -13,7 +13,7 @@ public struct SettingsConfig {
         case bool(_ title: String, key: String, completion: ((Bool) -> Void)?)
         case int(_ title: String, key: String, completion: ((Int) -> Void)?)
         case string(_ title: String, key: String, completion: ((String?) -> Void)?)
-        case button(_ title: String, style: ButtonStyle, action: (() -> Void)?)
+        case button(_ title: String, style: ButtonStyle, action: ((SettingsViewController?) -> Void)?)
 
         public enum ButtonStyle {
             case destructive // red

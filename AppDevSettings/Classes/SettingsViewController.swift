@@ -19,11 +19,13 @@ public class SettingsViewController: UITableViewController {
     }
 
     public init(config: SettingsConfig) {
+
         super.init(style: .grouped)
 
         self.config = config
 
         if let image = config.headerImage, let h = config.headerHeight {
+
             let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: h))
 
             let imageView = UIImageView(image: image)
@@ -34,7 +36,9 @@ public class SettingsViewController: UITableViewController {
             }
 
             tableView.tableHeaderView = headerView
+
         } else if let view = config.headerView, let h = config.headerHeight {
+
             let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: h))
             headerView.addSubview(view)
 
@@ -43,11 +47,13 @@ public class SettingsViewController: UITableViewController {
             }
 
             tableView.tableHeaderView = headerView
+
         }
 
         self.tableView.register(BooleanTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.booleanCell)
         self.tableView.register(ButtonTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.buttonCell)
         self.tableView.register(InputTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.inputCell)
+
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -108,7 +114,7 @@ public class SettingsViewController: UITableViewController {
 
         switch item {
         case .button(_, _, let action):
-            action?()
+            action?(self)
         default:
             return
         }

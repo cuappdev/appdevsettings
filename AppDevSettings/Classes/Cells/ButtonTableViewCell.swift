@@ -13,6 +13,8 @@ class ButtonTableViewCell: UITableViewCell {
         didSet {
             textLabel?.textColor = style.color()
             textLabel?.textAlignment = style == .detail ? .left : .center
+
+            accessoryType = style == .detail ? .disclosureIndicator : .none
         }
     }
 
