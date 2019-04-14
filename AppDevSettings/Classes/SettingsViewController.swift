@@ -28,15 +28,15 @@ public class SettingsViewController: UITableViewController {
 
         if let image = config.headerImage, let h = config.headerHeight {
 
-            let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: h + headerImageBuffer))
+            let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: h + 2*headerImageBuffer))
 
             let imageView = UIImageView(image: image)
             imageView.contentMode = .scaleAspectFit
             headerView.addSubview(imageView)
 
             imageView.snp.makeConstraints { make in
-                make.leading.top.trailing.equalToSuperview()
-                make.bottom.equalToSuperview().inset(headerImageBuffer)
+                make.leading.trailing.equalToSuperview()
+                make.top.bottom.equalToSuperview().inset(headerImageBuffer)
             }
 
             tableView.tableHeaderView = headerView
