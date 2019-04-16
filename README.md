@@ -1,9 +1,10 @@
 # AppDevSettings
 
-[![CI Status](https://img.shields.io/travis/Drew Dunne/AppDevSettings.svg?style=flat)](https://travis-ci.org/Drew Dunne/AppDevSettings)
+<!-- [![CI Status](https://img.shields.io/travis/Drew Dunne/AppDevSettings.svg?style=flat)](https://travis-ci.org/Drew Dunne/AppDevSettings)
 [![Version](https://img.shields.io/cocoapods/v/AppDevSettings.svg?style=flat)](https://cocoapods.org/pods/AppDevSettings)
 [![License](https://img.shields.io/cocoapods/l/AppDevSettings.svg?style=flat)](https://cocoapods.org/pods/AppDevSettings)
 [![Platform](https://img.shields.io/cocoapods/p/AppDevSettings.svg?style=flat)](https://cocoapods.org/pods/AppDevSettings)
+-->
 
 ## Example
 
@@ -17,7 +18,7 @@ AppDevSettings is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AppDevSettings'
+pod 'AppDevSettings', :git => 'https://github.com/cuappdev/appdevsettings.git'
 ```
 
 ## Author
